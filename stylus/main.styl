@@ -1,3 +1,23 @@
-body {
-	background: pink;
-}
+@import 'modules/_vars'
+@import 'modules/_info'
+@import 'modules/_form'
+
+body
+	background-image url('../images/bg-intro-mobile.png')
+	background-position auto
+	background-size cover
+	background-repeat no-repeat
+	background-color color-red
+	font-family 'Poppins', sans-serif
+	font-size 16px
+	font-weight 400
+	display flex
+	justify-content center
+
+	main
+		max-width 330px
+
+@media screen and (min-width 768px)
+	body
+		background-image url('../images/bg-intro-desktop.png')
+		background-repeat repeat
