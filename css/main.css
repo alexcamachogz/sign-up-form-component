@@ -79,10 +79,18 @@
 }
 @media screen and (min-width: 1024px) {
   .form-content {
-    border: 1px solid #008000;
+    width: 540px;
   }
   .form {
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
+    padding-top: 30px;
+    height: 435px;
+  }
+  .form .form-inputs input {
+    width: 80%;
+  }
+  .form .form-inputs p {
+    width: 80%;
   }
 }
 .btn-purple {
@@ -129,6 +137,22 @@
 .btn-green:active {
   background-color: #49ae84;
 }
+@media screen and (min-width: 1024px) {
+  .btn-purple {
+    height: 62px;
+  }
+  .btn-purple a {
+    height: 100%;
+    line-height: 62px;
+    width: 100%;
+  }
+  .btn-purple a span {
+    font-weight: 600;
+  }
+  .btn-green {
+    width: 85%;
+  }
+}
 body {
   background-image: url("../images/bg-intro-mobile.png");
   background-position: auto;
@@ -164,6 +188,5 @@ body a {
     align-items: center;
     width: 80vw !important;
     height: 85vh;
-    border: 1px solid #00f;
   }
 }
