@@ -1,8 +1,8 @@
 .info-content {
   border: 1px solid transparent;
-  color: #feffff;
+  color: #f3ffff;
   margin-top: 100px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   text-align: center;
 }
 .info-content .title {
@@ -16,13 +16,58 @@
   letter-spacing: 1px;
   line-height: 20px;
 }
-.form-content {
-  border: 1px solid #ff0;
+.form {
+  background-color: #f3ffff;
+  border-radius: 10px;
+  height: 450px;
+  margin-bottom: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
-.btn {
-  display: block;
+.btn-purple {
+  align-items: center;
+  background-color: #6055a5;
+  border-radius: 10px;
+  box-shadow: 0px 10px 0px 0px #dc6569;
+  cursor: pointer;
+  display: flex;
+  height: 90px;
+  justify-content: center;
+  margin-bottom: 25px;
+  text-align: center;
   width: 100%;
-  background-color: #f00;
+}
+.btn-purple:active {
+  background-color: #49417d;
+  box-shadow: 0px 0px 0px 0px #dc6569;
+}
+.btn-purple a {
+  display: block;
+  font-size: 15px;
+  font-weight: 200;
+  height: 45px;
+  line-height: 26px;
+  width: 170px;
+}
+.btn-purple a span {
+  font-weight: 600;
+}
+.btn-green {
+  background-color: #38cc8c;
+  border-bottom: 5px solid #49ae84;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 57px;
+  line-height: 57px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 280px;
+  font-weight: 400;
+}
+.btn-green:active {
+  background-color: #49ae84;
 }
 body {
   background-image: url("../images/bg-intro-mobile.png");
@@ -38,6 +83,10 @@ body {
 }
 body main {
   max-width: 330px;
+}
+body a {
+  color: #f3ffff;
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
   body {
