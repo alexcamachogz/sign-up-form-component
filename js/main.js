@@ -1,4 +1,5 @@
 let buttonValidator = document.getElementById("dataValidation");
+let alertSuccess = document.getElementById("alertSuccess");
 
 let inputs = [
 	document.getElementById("inputFirstName"),
@@ -16,16 +17,26 @@ buttonValidator.addEventListener("click", () => {
 })
 
 function isEmpty(inputs) {
+	let cont = 0;
 
 	inputs.forEach((input) => {
 		if (input.value.length === 0) {
 			input.classList.add('info-error', 'img-error');
+			alertSuccess.classList.remove('visible');
 			input.nextElementSibling.innerHTML = `${input.placeholder} cannot be empty`;
+			cont += 1;
 		} else {
 			input.classList.remove('info-error', 'img-error');
 			input.nextElementSibling.innerHTML = "";
 		}
 	});
+
+	if (cont === 0) {
+		alertSuccess.classList.add('visible');
+		inputs.forEach((input) => {
+			input.value = ''
+		})
+	}
 }
 
 function isValidEmail(email, expr) {
