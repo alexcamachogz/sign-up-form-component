@@ -16,7 +16,7 @@ body
 	justify-content center
 
 	main
-		max-width 330px
+		width 330px
 
 	a
 		color color-white
@@ -26,3 +26,13 @@ body
 	body
 		background-image url('../images/bg-intro-desktop.png')
 		background-repeat repeat
+
+@media screen and (min-width 1024px)
+	body
+		height 100vh
+
+	main
+		display flex
+		width 80vw !important
+		height 90vh
+		border 1px solid blue

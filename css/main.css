@@ -19,10 +19,46 @@
 .form {
   background-color: #f3ffff;
   border-radius: 10px;
+  box-shadow: 0px 10px 0px 0px #dc6569;
   height: 450px;
   margin-bottom: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 27px;
+}
+.form .form-inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form .form-inputs input {
+  border-radius: 10px;
+  border: 1px solid #b9b6d3;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding-left: 25px;
+  width: 255px;
+}
+.form .form-inputs input:focus,
+.form .form-inputs input input.form-control:focus {
+  border-color: #3e3c49;
+  box-shadow: none;
+  outline: none;
+  outline-width: 0;
+}
+.form .form-inputs p {
+  display: block;
+  color: #b9b6d3;
+  font-size: 13px;
+  line-height: 24px;
+  margin-top: 16px;
+  text-align: center;
+  width: 280px;
+}
+.form .form-inputs p a {
+  color: #ff7a7a;
+  font-weight: 500;
 }
 .btn-purple {
   align-items: center;
@@ -60,7 +96,6 @@
   height: 57px;
   line-height: 57px;
   margin: 0 auto;
-  margin-top: 20px;
   text-align: center;
   text-transform: uppercase;
   width: 280px;
@@ -82,7 +117,7 @@ body {
   justify-content: center;
 }
 body main {
-  max-width: 330px;
+  width: 330px;
 }
 body a {
   color: #f3ffff;
@@ -92,5 +127,16 @@ body a {
   body {
     background-image: url("../images/bg-intro-desktop.png");
     background-repeat: repeat;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    height: 100vh;
+  }
+  main {
+    display: flex;
+    width: 80vw !important;
+    height: 90vh;
+    border: 1px solid #00f;
   }
 }

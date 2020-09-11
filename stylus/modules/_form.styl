@@ -1,7 +1,42 @@
 .form
 	background-color color-white
 	border-radius 10px
+	box-shadow 0px 10px 0px 0px color-shadow
 	height 450px
 	margin-bottom 100px
-	padding-top 25px
-	padding-bottom 25px
+	padding-top 27px
+
+	.form-inputs
+		width 100%
+		display flex
+		flex-direction column
+		align-items center
+
+		input
+			border-radius 10px
+			border 1px solid color-grayish
+			height 50px
+			font-size 14px
+			font-weight 500
+			margin-bottom 20px
+			padding-left 25px
+			width 255px
+
+			&:focus, input.form-control:focus
+				border-color color-dark
+				box-shadow none
+				outline none
+				outline-width 0
+
+		p
+			display block
+			color color-grayish
+			font-size 13px
+			line-height 24px
+			margin-top 16px
+			text-align center
+			width 280px
+
+			a
+				color color-red
+				font-weight 500
