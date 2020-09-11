@@ -16,6 +16,23 @@
   letter-spacing: 1px;
   line-height: 20px;
 }
+@media screen and (min-width: 1024px) {
+  .info-content {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 80px;
+    text-align: left;
+  }
+  .info-content .title {
+    font-size: 47px;
+    line-height: 55px;
+    width: 413px;
+  }
+  .info-content .paragraph {
+    line-height: 25px;
+    width: 495px;
+  }
+}
 .form {
   background-color: #f3ffff;
   border-radius: 10px;
@@ -59,6 +76,14 @@
 .form .form-inputs p a {
   color: #ff7a7a;
   font-weight: 500;
+}
+@media screen and (min-width: 1024px) {
+  .form-content {
+    border: 1px solid #008000;
+  }
+  .form {
+    margin-bottom: 0 !important;
+  }
 }
 .btn-purple {
   align-items: center;
@@ -132,11 +157,13 @@ body a {
 @media screen and (min-width: 1024px) {
   body {
     height: 100vh;
+    align-items: center;
   }
   main {
     display: flex;
+    align-items: center;
     width: 80vw !important;
-    height: 90vh;
+    height: 85vh;
     border: 1px solid #00f;
   }
 }
