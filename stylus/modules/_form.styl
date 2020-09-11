@@ -2,9 +2,11 @@
 	background-color color-white
 	border-radius 10px
 	box-shadow 0px 10px 0px 0px color-shadow
-	height 450px
+	height 500px
 	margin-bottom 100px
 	padding-top 27px
+	display flex
+	align-items center
 
 	.form-inputs
 		width 100%
@@ -18,7 +20,6 @@
 			height 50px
 			font-size 14px
 			font-weight 500
-			margin-bottom 20px
 			padding-left 25px
 			width 255px
 
@@ -41,6 +42,18 @@
 				color color-red
 				font-weight 500
 
+				&:hover
+					text-decoration underline
+
+		.info
+			color color-red
+			font-size 12px
+			font-style italic
+			margin-top 5px
+			margin-bottom 15px
+			text-align right
+			width 280px
+
 @media screen and (min-width 1024px)
 	.form-content
 		width 540px
@@ -48,7 +61,7 @@
 	.form
 		margin-bottom 0
 		padding-top 30px
-		height 435px
+		height 485px
 
 		.form-inputs
 			input
@@ -56,3 +69,6 @@
 
 			p
 				width 80%
+
+			.info
+				width 85%

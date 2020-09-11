@@ -18,6 +18,8 @@
 		/>
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/main.css" />
+
+		<script src="js/main.js" async></script>
 	</head>
 
 	<body>
@@ -42,26 +44,33 @@
 						<input
 							type="text"
 							placeholder="First Name"
-							id="firstName"
+							id="inputFirstName"
 						/>
+						<span class="info" id="labelFirstName"> </span>
+
 						<input
 							type="text"
 							placeholder="Last Name"
-							id="lastName"
+							id="inputLastName"
 						/>
+						<span class="info" id="labelLastName"></span>
+
 						<input
 							type="email"
 							placeholder="Email Address"
-							id="email"
+							id="inputEmail"
 						/>
+						<span class="info" id="labelEmail"></span>
+
 						<input
 							type="password"
 							placeholder="Password"
-							id="password"
+							id="inputPassword"
 						/>
+						<span class="info" id="labelPassword"></span>
 
-						<div class="btn-green">
-							<a href="#"> Claim your free trial </a>
+						<div class="btn-green" id="dataValidation">
+							<a> Claim your free trial </a>
 						</div>
 						<p>
 							By clicking the button, you are agreeing to our
