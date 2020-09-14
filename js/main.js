@@ -13,7 +13,6 @@ let exprEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(
 
 buttonValidator.addEventListener("click", () => {
 	isEmpty(inputs);
-	isValidEmail(inputEmail, exprEmail);
 })
 
 function isEmpty(inputs) {
@@ -31,6 +30,8 @@ function isEmpty(inputs) {
 		}
 	});
 
+	cont += isValidEmail(inputEmail, exprEmail);
+
 	if (cont === 0) {
 		alertSuccess.classList.add('visible');
 		inputs.forEach((input) => {
@@ -44,7 +45,12 @@ function isValidEmail(email, expr) {
 		if (!expr.test(email.value)) {
 			email.classList.add('info-error');
 			email.nextElementSibling.innerHTML = `Looks like this is not an email`;
-			email.value = 'email@example/com'
+			email.placeholder = 'email@example/com'
+			email.value = '';
+			return 1;
+		}
+		else {
+			return 0;
 		}
 	}
 }
