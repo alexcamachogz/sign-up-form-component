@@ -45,7 +45,8 @@ function isValidEmail(email, expr) {
 		if (!expr.test(email.value)) {
 			email.classList.add('info-error');
 			email.nextElementSibling.innerHTML = `Looks like this is not an email`;
-			email.value = 'email@example/com'
+			email.placeholder = 'email@example/com'
+			email.value = '';
 			return 1;
 		}
 		else {
